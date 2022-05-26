@@ -9,7 +9,7 @@ function TermsOfUser() {
             </div>
             <h2>Política Privacidade</h2>
             <p>A sua privacidade é importante para nós. É política do projetoLGPD respeitar a sua privacidade em relação a
-                qualquer informação sua que possamos coletar no site <a href="meusite.com">projetoLGPD.com </a>Projeto LGPD, e outros sites
+                qualquer informação sua que possamos coletar no site <a href="https://projeto-lgpd.netlify.app">projetoLGPD.com </a>Projeto LGPD, e outros sites
                 que possuímos e operamos.</p>
             <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço.
                 Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que
