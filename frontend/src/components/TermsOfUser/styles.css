@@ -12,21 +12,14 @@ p{
     color: #000000;
 } 
 
-h1{
+  h1{
     font-size: 30px;
-    color: #003366;
+    color: #000000;
     text-transform: uppercase;
     align-items: center;
 }
 
-h2{
-    font-size: 16px;
-    padding: 5px;
-    background-color: #808080;
-    color: #000000;
-}
-
-h3{
+ h2{
     font-size: 16px;
     padding: 5px;
     background-color: #808080;
@@ -38,4 +31,4 @@ li{
     color: #000000;
     margin: 5px;
     font-size: 15px;
-}
+} 

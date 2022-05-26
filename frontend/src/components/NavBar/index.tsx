@@ -28,8 +28,8 @@ function NavBar({ message, textButton }: Cookies) {
                             <h1>Projeto LGPD</h1>
                             <a href="https://unifafibe.com.br">
                                 <div className="dsmovie-contact-container">
-                                    <GithubIcon />
-                                    <p className="dsmovie-contact-link">/UNIFAFIBE</p>
+                                    
+                                    <p className="dsmovie-contact-link">UNIFAFIBE</p>
                                 </div>
                             </a>
                             <NavLink

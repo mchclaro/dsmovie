@@ -14,8 +14,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Listing />} />
-        <Route path="/form"> </Route>
+        <Route path="/form"> 
         <Route path=":movieId" element={<Form />} />
+        </Route>
         <Route path="/termsofuse" element={<TermsOfUser />} />
       </Routes>
     </BrowserRouter>
