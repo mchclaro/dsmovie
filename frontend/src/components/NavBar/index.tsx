@@ -1,4 +1,5 @@
-import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
+import { ReactComponent as Faculdade } from 'assets/img/faculdade.svg';
+import { ReactComponent as Privacidade } from 'assets/img/privacidade.svg';
 import './styles.css';
 import { useCallback, useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -28,13 +29,14 @@ function NavBar({ message, textButton }: Cookies) {
                             <h1>Projeto LGPD</h1>
                             <a href="https://unifafibe.com.br">
                                 <div className="dsmovie-contact-container">
-                                    
+                                    <Faculdade />
                                     <p className="dsmovie-contact-link">UNIFAFIBE</p>
                                 </div>
                             </a>
                             <NavLink
                                 className="navbar-item"
                                 to="/termsofuse">
+                                    <Privacidade />
                                 POLITICAS DE PRIVACIDADE
                             </NavLink>
                         </div>
