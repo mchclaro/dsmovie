@@ -6,6 +6,7 @@ import {
 import Listing from 'pages/Listing';
 import Form from 'pages/Form';
 import NavBar from "components/NavBar";
+import TermsOfUser from "components/TermsOfUser";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Listing />} />
-        <Route path="/form">
-          <Route path=":movieId" element={<Form />} />
-        </Route>
+        <Route path="/form"> </Route>
+        <Route path=":movieId" element={<Form />} />
+        <Route path="/termsofuse" element={<TermsOfUser />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,22 +1,59 @@
 import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
+import { ReactComponent as Unifafibe } from 'assets/img/unifafibe.svg';
 import './styles.css';
+import { useCallback, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-function NavBar() {
+type Cookies = {
+    message?: string;
+    textButton?: string;
+}
+
+function NavBar({ message, textButton }: Cookies) {
+    const [cookies, setCookies] = useState(() => {
+        return !!localStorage.getItem('@CookiesFloatingScreen2:ReactJS');
+    });
+
+    const handleAcceptCookies = useCallback(() => {
+        localStorage.setItem('@CookiesFloatingScreen2:ReactJS', 'accept');
+
+        setCookies(true);
+    }, []);
 
     return (
-        <header>
-            <nav className="container">
-                <div className="dsmovie-nav-content">
-                    <h1>DSMovie</h1>
-                    <a href="https://github.com/mch-claro">
-                        <div className="dsmovie-contact-container">
-                            <GithubIcon />
-                            <p className="dsmovie-contact-link">/mch-claro</p>
+        <html>
+            <body>
+                <header>
+                    <nav className="container">
+                        <div className="dsmovie-nav-content">
+                            <h1>Projeto LGPD</h1>
+                            <a href="https://unifafibe.com.br">
+                                <div className="dsmovie-contact-container">
+                                    <GithubIcon />
+                                    <p className="dsmovie-contact-link">/UNIFAFIBE</p>
+                                </div>
+                            </a>
+                            <NavLink
+                                className="navbar-item"
+                                to="/termsofuse">
+                                POLITICAS DE PRIVACIDADE
+                            </NavLink>
                         </div>
-                    </a>
-                </div>
-            </nav>
-        </header>
+                        {!cookies && (
+                            <nav className="box-cookies">
+                                <p>{message ? message : 'Este site usa cookies para garantir que você obtenha a melhor experiência. Confira nossa política de privacidade!'}</p>
+                                <button className="aceitar" onClick={handleAcceptCookies}>{textButton ? textButton : 'Entendi!'}</button>
+                            </nav>
+                        )}
+                    </nav>
+                </header>
+                <footer>
+                    2022 Projeto LGPD - Todos os diretos reservados |
+                    Responsáveis: Alunos de Sistemas de Informação - UNIFAFIBE
+                </footer>
+            </body>
+        </html>
+
     );
 }
 

@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsmovie.dto.MovieDTO;
 import com.devsuperior.dsmovie.dto.ScoreDTO;
+import com.devsuperior.dsmovie.entities.Criptografar;
 import com.devsuperior.dsmovie.entities.Movie;
 import com.devsuperior.dsmovie.entities.Score;
 import com.devsuperior.dsmovie.entities.User;
@@ -33,6 +34,11 @@ public class ScoreService {
 		{
 			user = new User();
 			user.setEmail(dto.getEmail());
+			user.setEndereco(dto.getEndereco());
+			user.setNome(dto.getNome());
+			user.setSenha(Criptografar.criptografia(dto.getSenha()));
+			user.setSexo(dto.getSexo());
+			user.setTelefone(dto.getTelefone());
 			user = userRepository.saveAndFlush(user);
 		}
 		

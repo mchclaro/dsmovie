@@ -16,15 +16,25 @@ public class User {
 	
 	private Long id;
 	private String email;
+	private String nome;
+	private String endereco;
+	private String sexo;
+	private String telefone;
+	private String senha;
 	
 	public User() 
 	{
 	}
 
-	public User(Long id, String email) {
-		super();
+	public User(Long id, String email, String nome, String endereco, String sexo, 
+			String telefone, String senha) {
 		this.id = id;
 		this.email = email;
+		this.nome = nome;
+		this.endereco = endereco;
+		this.sexo = sexo;
+		this.telefone = telefone;
+		this.senha = senha;
 	}
 
 	public Long getId() {
@@ -42,4 +52,44 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}	
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 }

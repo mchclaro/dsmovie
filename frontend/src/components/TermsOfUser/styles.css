@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    color: #333333;
+    font-size: 12px;
+    background-color: #D3D3D3;
+}
+
+p{
+    line-height: 20px;
+    text-align: justify;
+    font-size: 15px;
+    color: #000000;
+} 
+
+h1{
+    font-size: 30px;
+    color: #003366;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+h2{
+    font-size: 16px;
+    padding: 5px;
+    background-color: #808080;
+    color: #000000;
+}
+
+h3{
+    font-size: 16px;
+    padding: 5px;
+    background-color: #808080;
+    color: #000000;
+}
+
+li{
+    background: #DCDCDC;
+    color: #000000;
+    margin: 5px;
+    font-size: 15px;
+}
