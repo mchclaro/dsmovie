@@ -111,7 +111,7 @@ function TermsOfUser() {
                 <li>B Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, <a
                     href='https://ondeapostar.pt/onde-da-a-bola/'>Onde dá a Bola</a> ou azar, qualquer tipo de
                     pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</li>
-                <li>C Não causar danos aos sistemas físicos hardwares e lógicos softwares do Projeto LGPD, de seus
+                <li>C Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Projeto LGPD, de seus
                     fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas
                     de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li>
             </ul>
