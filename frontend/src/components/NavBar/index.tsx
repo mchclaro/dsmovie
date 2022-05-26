@@ -1,8 +1,7 @@
 import { ReactComponent as GithubIcon } from 'assets/img/github.svg';
-import { ReactComponent as Unifafibe } from 'assets/img/unifafibe.svg';
 import './styles.css';
 import { useCallback, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 type Cookies = {
     message?: string;
